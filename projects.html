@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+    .image-container {
+      width: 48%; 
+      text-align: center;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .image-container figcaption {
+      margin-top: 10px;
+      color: #444;
+    }
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .button-container .btn {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px; 
+      text-decoration: none; 
+      transition: background-color 0.3s ease;
+    }
+    .button-container .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image-container">
+    <figure>
+      <img src="image/1.jpg" alt="Image 1">
+      <figcaption>ITE 399</figcaption>
+    </figure>
+  </div>
+  <div class="image-container">
+    <figure>
+      <img src="image/mm.jpeg" alt="Image 2">
+      <figcaption>ITE 300</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- Button container -->
+<div class="button-container">
+  <button onclick="window.location.href='https://github.com/Christian202419/Project-'">View on GitHub</button>
+</div>
+
+<!-- Exit button at the bottom -->
+<div class="button-container">
+  <a href="index.html" class="btn">Exit</a>
+</div>
+
+</body>
+</html>
