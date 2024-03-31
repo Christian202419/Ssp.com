@@ -14,24 +14,27 @@
     .container {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap; /* Allow items to wrap to the next line */
       margin: 20px auto;
       max-width: 800px;
     }
     .image-container {
       width: 48%; 
       text-align: center;
+      margin-bottom: 20px; /* Add some space between image containers */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow to image containers */
+      border-radius: 5px; /* Add rounded corners */
+      overflow: hidden; /* Ensure images don't overflow the container */
     }
     .image-container img {
       width: 100%;
       height: auto;
       display: block;
-      margin: 0 auto;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
     .image-container figcaption {
       margin-top: 10px;
       color: #444;
+      font-size: 16px;
     }
     .button-container {
       text-align: center;
@@ -47,6 +50,7 @@
       margin-right: 10px; 
       text-decoration: none; 
       transition: background-color 0.3s ease;
+      display: inline-block; /* Ensure buttons are displayed inline */
     }
     .button-container .btn:hover {
       background-color: #0056b3;
